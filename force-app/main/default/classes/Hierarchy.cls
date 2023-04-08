@@ -1,13 +1,17 @@
 public with sharing class Hierarchy {
     public static List<UserRole> getRoleHierarchy(Id roleId){
-        Id lastRole = roleId;
+        
+        //Getting Roles which are associate to user define hierarchy 
         Map<Id,UserRole> roles = new Map<Id,UserRole>([Select id, ParentRoleId from UserRole where name like 'Test%' ]);
+
         Map<Id, UserRole> rolesWithParent = new Map<Id, UserRole>();
         List<UserRole> rolesHierarchy = new List<UserRole>();
+
         rolesHierarchy.add(roles.get(roleId));
 
         for(UserRole thisRole : roles.values()) {
             if(thisRole.ParentRoleId != null){
+                //put Parent RoleId as key and UserRole as value
                 rolesWithParent.put(thisRole.ParentRoleId,thisRole);
             }
 
