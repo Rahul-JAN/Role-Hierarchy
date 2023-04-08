@@ -1,8 +1,8 @@
 public with sharing class Hierarchy {
+    //Works for single child hierarchy
     public static List<UserRole> getRoleHierarchy(Id roleId){
         
-        //Getting Roles which are associate to user define hierarchy 
-        Map<Id,UserRole> roles = new Map<Id,UserRole>([Select id, ParentRoleId from UserRole where name like 'Test%' ]);
+        Map<Id,UserRole> roles = new Map<Id,UserRole>([Select id, ParentRoleId, Name, DeveloperName from UserRole]);
 
         Map<Id, UserRole> rolesWithParent = new Map<Id, UserRole>();
         List<UserRole> rolesHierarchy = new List<UserRole>();
@@ -34,4 +34,5 @@ public with sharing class Hierarchy {
 
         return rolesHierarchy;
     }
+
 }
