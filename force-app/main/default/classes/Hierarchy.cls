@@ -4,6 +4,8 @@ public with sharing class Hierarchy {
         UserRole role;
         List<RoleHierarchyNode> subordinateRoles;
     }
+    //  Holds Role id as key and all associated (child) roles as value
+    public static Map<Id, List<UserRole>> rolesWithParent = new Map<Id, List<UserRole>>();
 
     /*  
         Approach 1
@@ -52,9 +54,6 @@ public with sharing class Hierarchy {
 
         Id parentId = roleId;
         RoleHierarchyNode roleHierarchy =  new RoleHierarchyNode();
-
-        //  Holds Role id as key and all associated (child) roles as value
-        Map<Id, List<UserRole>> rolesWithParent = new Map<Id, List<UserRole>>();
         
         Map<Id,UserRole> roles = new Map<Id,UserRole>([Select id, ParentRoleId, Name, DeveloperName from UserRole]);
 
@@ -80,7 +79,7 @@ public with sharing class Hierarchy {
 
         roleHierarchy.role = roles.get(parentId);
         //  to get all associated (child) roles
-        roleHierarchy.subordinateRoles = getSubordinateRoles(rolesWithParent,parentId);
+        roleHierarchy.subordinateRoles = getSubordinateRoles(parentId);
         
         return roleHierarchy;
     }
@@ -92,7 +91,7 @@ public with sharing class Hierarchy {
 
         Description:    Return all the related child roles of a Role
     */
-    public static List<RoleHierarchyNode> getSubordinateRoles(Map<Id, List<UserRole>> rolesWithParent, Id roleId){
+    public static List<RoleHierarchyNode> getSubordinateRoles(Id roleId){
 
         List<RoleHierarchyNode> relatedRoles =  new List<RoleHierarchyNode>();
 
@@ -103,7 +102,7 @@ public with sharing class Hierarchy {
 
                 if(rolesWithParent.containsKey(thisRole.Id)){
                     //  Get all child role of VAR(thisRole)
-                    roleHierarchy.subordinateRoles = getSubordinateRoles(rolesWithParent,thisRole.Id);
+                    roleHierarchy.subordinateRoles = getSubordinateRoles(thisRole.Id);
                 }
                 
                 relatedRoles.add(roleHierarchy);
