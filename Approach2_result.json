@@ -1,0 +1,253 @@
+{
+    "subordinateRoles": [
+      {
+        "subordinateRoles": null,
+        "role": {
+          "attributes": {
+            "type": "UserRole",
+            "url": "/services/data/v57.0/sobjects/UserRole/00E5g000000DZxzEAG"
+          },
+          "Id": "00E5g000000DZxzEAG",
+          "ParentRoleId": "00E5g0000029u7GEAQ",
+          "Name": "Burlington Textiles Corp of America Customer User",
+          "DeveloperName": "BurlingtonTextilesCorpofAmericaCustomerUser"
+        }
+      },
+      {
+        "subordinateRoles": null,
+        "role": {
+          "attributes": {
+            "type": "UserRole",
+            "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7NEAQ"
+          },
+          "Id": "00E5g0000029u7NEAQ",
+          "ParentRoleId": "00E5g0000029u7GEAQ",
+          "Name": "CFO",
+          "DeveloperName": "CFO"
+        }
+      },
+      {
+        "subordinateRoles": null,
+        "role": {
+          "attributes": {
+            "type": "UserRole",
+            "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7XEAQ"
+          },
+          "Id": "00E5g0000029u7XEAQ",
+          "ParentRoleId": "00E5g0000029u7GEAQ",
+          "Name": "COO",
+          "DeveloperName": "COO"
+        }
+      },
+      {
+        "subordinateRoles": [
+          {
+            "subordinateRoles": null,
+            "role": {
+              "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7UEAQ"
+              },
+              "Id": "00E5g0000029u7UEAQ",
+              "ParentRoleId": "00E5g0000029u7LEAQ",
+              "Name": "Customer Support, International",
+              "DeveloperName": "CustomerSupportInternational"
+            }
+          },
+          {
+            "subordinateRoles": null,
+            "role": {
+              "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7PEAQ"
+              },
+              "Id": "00E5g0000029u7PEAQ",
+              "ParentRoleId": "00E5g0000029u7LEAQ",
+              "Name": "Customer Support, North America",
+              "DeveloperName": "CustomerSupportNorthAmerica"
+            }
+          },
+          {
+            "subordinateRoles": null,
+            "role": {
+              "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7SEAQ"
+              },
+              "Id": "00E5g0000029u7SEAQ",
+              "ParentRoleId": "00E5g0000029u7LEAQ",
+              "Name": "Installation & Repair Services",
+              "DeveloperName": "InstallationRepairServices"
+            }
+          }
+        ],
+        "role": {
+          "attributes": {
+            "type": "UserRole",
+            "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7LEAQ"
+          },
+          "Id": "00E5g0000029u7LEAQ",
+          "ParentRoleId": "00E5g0000029u7GEAQ",
+          "Name": "SVP, Customer Service & Support",
+          "DeveloperName": "SVPCustomerServiceSupport"
+        }
+      },
+      {
+        "subordinateRoles": null,
+        "role": {
+          "attributes": {
+            "type": "UserRole",
+            "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7WEAQ"
+          },
+          "Id": "00E5g0000029u7WEAQ",
+          "ParentRoleId": "00E5g0000029u7GEAQ",
+          "Name": "SVP, Human Resources",
+          "DeveloperName": "SVPHumanResources"
+        }
+      },
+      {
+        "subordinateRoles": [
+          {
+            "subordinateRoles": null,
+            "role": {
+              "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7VEAQ"
+              },
+              "Id": "00E5g0000029u7VEAQ",
+              "ParentRoleId": "00E5g0000029u7HEAQ",
+              "Name": "VP, International Sales",
+              "DeveloperName": "VPInternationalSales"
+            }
+          },
+          {
+            "subordinateRoles": [
+              {
+                "subordinateRoles": null,
+                "role": {
+                  "attributes": {
+                    "type": "UserRole",
+                    "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7REAQ"
+                  },
+                  "Id": "00E5g0000029u7REAQ",
+                  "ParentRoleId": "00E5g0000029u7KEAQ",
+                  "Name": "Marketing Team",
+                  "DeveloperName": "MarketingTeam"
+                }
+              }
+            ],
+            "role": {
+              "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7KEAQ"
+              },
+              "Id": "00E5g0000029u7KEAQ",
+              "ParentRoleId": "00E5g0000029u7HEAQ",
+              "Name": "VP, Marketing",
+              "DeveloperName": "VPMarketing"
+            }
+          },
+          {
+            "subordinateRoles": [
+              {
+                "subordinateRoles": [
+                  {
+                    "subordinateRoles": null,
+                    "role": {
+                      "attributes": {
+                        "type": "UserRole",
+                        "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7QEAQ"
+                      },
+                      "Id": "00E5g0000029u7QEAQ",
+                      "ParentRoleId": "00E5g0000029u7MEAQ",
+                      "Name": "Channel Sales Team",
+                      "DeveloperName": "ChannelSalesTeam"
+                    }
+                  }
+                ],
+                "role": {
+                  "attributes": {
+                    "type": "UserRole",
+                    "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7MEAQ"
+                  },
+                  "Id": "00E5g0000029u7MEAQ",
+                  "ParentRoleId": "00E5g0000029u7IEAQ",
+                  "Name": "Director, Channel Sales",
+                  "DeveloperName": "DirectorChannelSales"
+                }
+              },
+              {
+                "subordinateRoles": [
+                  {
+                    "subordinateRoles": null,
+                    "role": {
+                      "attributes": {
+                        "type": "UserRole",
+                        "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7TEAQ"
+                      },
+                      "Id": "00E5g0000029u7TEAQ",
+                      "ParentRoleId": "00E5g0000029u7JEAQ",
+                      "Name": "Eastern Sales Team",
+                      "DeveloperName": "EasternSalesTeam"
+                    }
+                  },
+                  {
+                    "subordinateRoles": null,
+                    "role": {
+                      "attributes": {
+                        "type": "UserRole",
+                        "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7OEAQ"
+                      },
+                      "Id": "00E5g0000029u7OEAQ",
+                      "ParentRoleId": "00E5g0000029u7JEAQ",
+                      "Name": "Western Sales Team",
+                      "DeveloperName": "WesternSalesTeam"
+                    }
+                  }
+                ],
+                "role": {
+                  "attributes": {
+                    "type": "UserRole",
+                    "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7JEAQ"
+                  },
+                  "Id": "00E5g0000029u7JEAQ",
+                  "ParentRoleId": "00E5g0000029u7IEAQ",
+                  "Name": "Director, Direct Sales",
+                  "DeveloperName": "DirectorDirectSales"
+                }
+              }
+            ],
+            "role": {
+              "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7IEAQ"
+              },
+              "Id": "00E5g0000029u7IEAQ",
+              "ParentRoleId": "00E5g0000029u7HEAQ",
+              "Name": "VP, North American Sales",
+              "DeveloperName": "VPNorthAmericanSales"
+            }
+          }
+        ],
+        "role": {
+          "attributes": {
+            "type": "UserRole",
+            "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7HEAQ"
+          },
+          "Id": "00E5g0000029u7HEAQ",
+          "ParentRoleId": "00E5g0000029u7GEAQ",
+          "Name": "SVP, Sales & Marketing",
+          "DeveloperName": "SVPSalesMarketing"
+        }
+      }
+    ],
+    "role": {
+      "attributes": {
+        "type": "UserRole",
+        "url": "/services/data/v57.0/sobjects/UserRole/00E5g0000029u7GEAQ"
+      },
+      "Id": "00E5g0000029u7GEAQ",
+      "Name": "CEO",
+      "DeveloperName": "CEO"
+    }
+  }
