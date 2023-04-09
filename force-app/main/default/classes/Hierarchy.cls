@@ -85,10 +85,6 @@ public with sharing class Hierarchy {
     }
     
     /* 
-        Parameters: 
-            rolesWithParent => Holds all the related child roles of a Role
-            roleId          => Id of a Role 
-
         Description:    Return all the related child roles of a Role
     */
     public static List<RoleHierarchyNode> getSubordinateRoles(Id roleId){
