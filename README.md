@@ -1,4 +1,4 @@
-# Create Role Hierarchy
+# Scripts to Run the Role Hierarchy functions
 
 Run the Apex script to get the responce of the role hierarchy
 Path scripts/apex/execute.apex 
